@@ -1,0 +1,84 @@
+{
+  "appName": "Employees App",
+  "error": {
+    "retry": "Retry",
+    "title": "Error",
+    "dismiss": "OK",
+    "createEmployee": "Failed to create employee",
+    "updateEmployee": "Failed to update employee",
+    "deleteEmployee": "Failed to delete employee",
+    "fetchEmployees": "Failed to sync with server"
+  },
+  "employees": {
+    "title": "Employees",
+    "list": {
+      "empty": "No employees found"
+    },
+    "cell": {
+      "age": "{} years old"
+    }
+  },
+  "employeeDetail": {
+    "title": "Employee Detail",
+    "notFound": "Employee not found",
+    "cell": {
+      "id": "ID",
+      "name": "Name",
+      "salary": "Salary",
+      "age": "Age",
+      "ageSuffix": "{} years old"
+    },
+    "edit": "Edit",
+    "delete": "Delete",
+    "editDialog": {
+      "title": "Edit Employee",
+      "titleCreation": "Create Employee",
+      "nameLabel": "Name",
+      "salaryLabel": "Salary",
+      "ageLabel": "Age",
+      "save": "Save"
+    }
+  },
+  "dataSource": {
+    "unsynced": "Unsynced",
+    "synced": "Synced"
+  },
+  "validators": {
+    "empty": "Field cannot be empty",
+    "invalidSalary": "Value is an invalid salary (0 to 9999999)",
+    "invalidAge": "Value is an invalid age (0 to 150)"
+  },
+  "semantics": {
+    "button": {
+      "destructiveHint": "This is a destructive action"
+    },
+    "statusChip": {
+      "label": "Data sync status: {}"
+    },
+    "employeeCell": {
+      "label": "Employee {}, {}",
+      "hint": "Double tap to view details",
+      "pendingHint": "This employee is pending sync"
+    },
+    "employeeLoadingCell": {
+      "label": "Loading employee data"
+    },
+    "employeesList": {
+      "fabLabel": "Create new employee",
+      "emptyListLabel": "Employee list is empty",
+      "loadingLabel": "Loading employees",
+      "retryHint": "Double tap to retry loading"
+    },
+    "employeeDetail": {
+      "deleteHint": "Double tap to delete this employee",
+      "editHint": "Double tap to edit this employee",
+      "dataCardLabel": "Employee information"
+    },
+    "employeeEdit": {
+      "nameFieldHint": "Enter employee name",
+      "salaryFieldHint": "Enter salary in euros",
+      "ageFieldHint": "Enter employee age",
+      "saveHint": "Double tap to save changes"
+    }
+  }
+}
