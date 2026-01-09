@@ -1,3 +1,4 @@
+import 'package:employees_app/domain/exceptions/app_exceptions.dart';
 import 'package:employees_app/domain/models/employee/employee.dart';
 import 'package:employees_app/domain/models/employee_edit/employee_edit.dart';
 import 'package:employees_app/domain/repositories/employees_api/employees_repository.dart';
@@ -56,7 +57,7 @@ class EmployeesRepositoryMock implements EmployeesRepository {
     await Future.delayed(const Duration(seconds: 3));
     final index = _employees.indexWhere((e) => e.id == id);
     if (index == -1) {
-      throw Exception('Employee not found');
+      throw NotFoundException('error.updateEmployee');
     }
     _employees[index] = Employee(
       id: id,
@@ -72,7 +73,7 @@ class EmployeesRepositoryMock implements EmployeesRepository {
     await Future.delayed(const Duration(seconds: 3));
     final index = _employees.indexWhere((e) => e.id == id);
     if (index == -1) {
-      throw Exception('Employee not found');
+      throw NotFoundException('error.deleteEmployee');
     }
     _employees.removeAt(index);
   }

@@ -1,4 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:employees_app/domain/exceptions/app_exceptions.dart';
 import 'package:employees_app/domain/models/employee/employee.dart';
 import 'package:employees_app/domain/models/employee_edit/employee_edit.dart';
 import 'package:employees_app/domain/models/sync/sync_data.dart';
@@ -74,7 +75,7 @@ class EmployeesNotifier extends AsyncNotifier<SyncData<List<Employee>>> {
       final List<Employee> newList = List<Employee>.from(originalList);
       final int index = newList.indexWhere((e) => e.id == id);
       if (index == -1) {
-        throw Exception('Employee not found');
+        throw NotFoundException('Employee not found');
       }
       final Employee edited = newList[index].copyWith(
         employeeName: employeeEdit.name,
