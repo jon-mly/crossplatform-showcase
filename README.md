@@ -22,7 +22,7 @@ A basic employee management app with:
 | Framework | Status |
 |-----------|--------|
 | Flutter | Done |
-| Kotlin Multiplatform (KMP) | Planned |
+| Compose Multiplatform (KMP) | Planned |
 | React Native | Planned |
 | iOS Native (Swift) | Optional |
 | Android Native (Kotlin) | Optional |
@@ -32,7 +32,7 @@ A basic employee management app with:
 ```
 .
 ├── flutter/       # Flutter implementation
-├── kmp/           # Kotlin Multiplatform (planned)
+├── cmp/           # Compose Multiplatform (planned)
 ├── react-native/  # React Native (planned)
 ├── ios/           # Native iOS (optional)
 └── android/       # Native Android (optional)
