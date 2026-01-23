@@ -59,12 +59,10 @@ class EmployeesRepositoryMock implements EmployeesRepository {
     if (index == -1) {
       throw NotFoundException('error.updateEmployee');
     }
-    _employees[index] = Employee(
-      id: id,
+    _employees[index] = _employees[index].copyWith(
       employeeName: employeeEdit.name,
       employeeSalary: employeeEdit.salary,
       employeeAge: employeeEdit.age,
-      profileImage: '',
     );
   }
 
